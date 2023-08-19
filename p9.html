@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG</title>
+</head>
+<body>
+    <center>
+        <h1>This is SVG(Scalable Vector Graphic) Tag</h1>
+        <p><b>( HTML SVGis a modularize language which is used to describe graphics in XML.)</b></p>
+    </center>
+    <hr>
+
+    <svg></svg>
+    <hr>
+    <svg>Hi SVG..!</svg>
+    <hr>
+
+    <svg><h1>This is SVG Head Tag..!</h1></svg>
+    <hr>
+
+    <center>HTML SVG Circle example</center>
+    <hr>
+
+    <svg width="200" height="200"> 
+        <circle r="80" cx="100" cy="100" fill="lightgray" stroke="pink" strock-width="40"></circle>
+
+    </svg>
+    <hr>
+
+    <center>HTML SVG Rectangle example</center>
+    <hr>
+
+    <svg width="400" height="200"> 
+        <rect width="400" height="200" fill="yellow" stroke="red" strock-width="20"/>
+
+    </svg>
+    <hr>
+
+    <center>HTML SVG Polygon example</center>
+    <hr>
+
+    <svg height="210" width="300" > 
+        <polygon points="100,10,40,198,190,78,10,78,160,198" fill="blue" stroke="red" strock-width="10"></polygon> 
+    </svg>
+    <hr>
+    <center>
+        <h1>This is CANVAS</h1>
+        <p>
+            The HTML canvas element providrs HTML a bitmaps surface to work with. It is used to draew graphics on the web page.The <b>HTML5 canvas tag</b> is used to drawgraphics using graphic using scripting languages like JAVASCRIPT.
+        </p>
+    </center>
+
+    <canvas>This is First Canvas tag</canvas>
+    <canvas id="myCanvas2" width="300px" height="100px" style="border:2px solid red;"></canvas>
+    <p><b>Note: it is always necessary to specify the id attribute and the height & width attribute to define the size of the Canvas. You can have multiple canvas elements on one html page.</b></p>
+    <hr>
+
+    <canvas id="myCanvas3" width="250px" height="150px" style="border:1px solid blue;"></canvas>
+
+    <script>
+        let c = document.getElementById("myCanvas3").getContext("2d");
+        c.fillStyle="red";
+        c.fillRect(25,25,200,100);
+    </script>
+
+    <center>
+        <h3>drawing Circle on Canvas</h3>
+    </center>
+
+    <canvas id="myCanvasCircle" width="400" height="200" style="border:1px solid green;"></canvas>
+
+    <script>
+        let e = document.getElementById("myCanvasCircle").getContext("2d");
+        e.fillStyle="red";
+        e.arc(200,100,90,0,2*Math.PI);
+        e.fill();
+        e.stroke();
+    </script>
+    <hr>
+
+    <center>
+        <h3>Drawing text on canvas</h3>
+    </center>
+
+    <canvas id="myCanvas" width="578" height="200" style="border:1px solid pink;"></canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas").getContext("2d");
+        canvas.font = '40pt Times New Roman';
+        canvas.fillStyle = 'blue';
+        canvas.fillText('Hello HTML5!',150,100);
+    </script>
+    <hr>
+    
+</body>
+</html>

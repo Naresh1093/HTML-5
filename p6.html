@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5</title>
+    <style>
+        dialog{
+            background-color: aqua;
+            color:blue
+            margin:20px
+            padding:20px
+            border:2px solid black
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+       <h3> DETAILS TAG</h3>
+       <p>This tag is used to specify the additional details on the web page that the user can view or hide  on demand</p>
+    </center>
+    <hr>
+
+    <center>
+        <h3>THIS IS SMMARY TAG</h3>
+        <p>the <b>HTML SUMMARY</b> tag is used with <b>DETAILS</b> tag. It is used as a summary, caption or legend for the content of a details element.</p>
+    </center>
+    <hr>
+
+    <details>
+        <summary>HTML</summary>
+        <h1>HTML</h1>
+        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel perspiciatis voluptatibus sed accusamus sit doloribus, non, error vitae modi quod quas debitis minus illo sapiente quasi repudiandae esse ea Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia eos, veritatis est enim excepturi, blanditiis quidem quis fugit reiciendis ipsum veniam mollitia eum sequi iste culpa laudantium adipisci alias natus! explicabo!</P>
+    </details>
+
+    <details>
+        <summary>CSS</summary>
+        <h1>CSS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet error eligendi odit quibusdam perferendis pariatur distinctio similique maxime, repellat, nemo sint asperiores! Dolorem iure officia recusandael Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia quos dignissimos dolore modi sunt quidem odio, facilis quas recusandae rem quae esse doloribus voluptates voluptatum neque iste repellendus hic labore! ratione quia ut?</p>
+    </details>
+
+
+    <details>
+        <summary>JS</summary>
+        <h1>JS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eveniet error eligendi odit quibusdam perferendis pariatur distinctio similique maxime, repellat, nemo sint asperiores! Dolorem iure officia recusandae ratione quia ut? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque porro magni quis vero atque. Animi officiis a aspernatur culpa totam ipsa incidunt unde vitae, nesciunt eaque ipsum molestiae consequuntur quaerat.</p>
+    </details>
+    
+    <center>
+        <h3>TIME TAG..!</h3>
+        <p> <b>HTML TIME</b> tag is used to define data and time. It displays time value in a 24 hours clock or a presies data in a gregorian calander in HTML.</p>
+    </center>
+    <hr>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet soluta enim velit ab porro repellat deserunt libero, exercitationem vero possimus error numquam quis modi, vel delectus explicabo aspernatur minima harum!</p>
+
+    <center>
+        <h3>THIS IS DILOG TAG</h3> 
+        <p><b>( This tag to creat a new popup dilog on a web page.)</b></p>
+
+    </center>
+
+    <dialog id="dialog">
+        <button id="btn2">&times;</button>
+        <h1>POPUP</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae consequatur facilis commodi praesentium? Dicta ad, odit, sequi, explicabo saepe quia accusamus possimus vero libero veritatis similique? Laborum ea natus commodi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum at mollitia facere? Dolor quam totam ab assumenda odio praesentium nostrum asperiores dolore facilis neque, nobis optio beatae. Nemo, ab expedita. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam provident fuga excepturi velit harum placeat perferendis. Nulla, natus molestias ab quae, non nisi veniam, perspiciatis ad dicta repudiandae error at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, earum voluptas. Doloremque excepturi, vel quaerat optio, dignissimos similique officia ab voluptatem odio earum porro veritatis vero reiciendis modi dolore facilis?</p>
+    </dialog> 
+
+        <button id="btn1" type="button">OPEN POPUP</button>
+     <script>
+        document.getElementById("btn1").onclick = function(){
+            document.getElementById("dialog").show();
+        }
+        document.getElementById("btn2").onclick = function(){
+            document.getElementById("dialog").show();
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METER</title>
+    <style>
+        meter{
+            width: 100%;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>METER TAG..!</h1>
+    </center>
+
+    <h2>Default Meter Tag..!</h2>
+    <meter></meter>
+    
+    <h2>Static Meter Tag..!</h2>
+    <meter min="1" max="100" value="40"></meter>
+
+    <h2>Dynamic Meter Tag..!</h2>
+    <meter min="1" max="100" id="Meter"></meter>
+
+    <script>
+        let globalMin = 1; 
+        function callProgress() // Function Declared
+        {
+             if(globalMin<=100){
+                globalMin++; // globalMin+1
+                document.getElementById("Meter").value = globalMin;
+             }
+
+        }
+         // callProgress(); // Function calling
+
+         setInterval("callProgress()",1000); // Default Method
+    </script>
+    
+    
+</body>
+</html>
